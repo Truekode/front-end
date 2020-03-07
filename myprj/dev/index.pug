@@ -1,0 +1,35 @@
+- var x = 0
+doctype html
+html(lang="en")
+  head
+    link(rel="stylesheet", href="../css/style.css")
+    title= 'myprj'
+    script(src="../lpu.json")
+  body
+    #addblock.crud
+        .input-group
+            input.form-control#fullName(type='text', aria-label='full name', placeholder='Наименование учреждения')
+            input.form-control#address(type='text', aria-label='address',placeholder='Адрес')
+            input.form-control#phone(type='text', aria-label='phone',placeholder='Телефон')
+            button.btn.btn-primary.form-control.add(type='button') Добавить
+    #deleteblock.crud
+        label.del(for="delBtn",style='font-size: 1rem;') Выберите какую запись удалить
+        select.delBtn.del
+        button.btn.btn-primary.delete.del(type='button') Удалить
+    #editblock.crud
+        .input-group.edt
+            label.edt(for="edtBtn",style='font-size: 1rem;') Выберите какую запись изменить
+            select.edtBtn.edt
+            input.form-control#fullNameEdit(type='text', aria-label='full name', placeholder='Наименование учреждения')
+            input.form-control#addressEdit(type='text', aria-label='address',placeholder='Адрес')
+            input.form-control#phoneEdit(type='text', aria-label='phone',placeholder='Телефон')
+            button.btn.btn-primary.edit(type='button') Изменить
+    table.table
+        thead
+            tr
+                th(scope='col') #
+                th(scope='col') Наименование учреждения
+                th(scope='col') Адрес
+                th(scope='col') Телефон
+        tbody.tbody
+    script(src="../app.js")

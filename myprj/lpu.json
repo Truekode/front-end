@@ -1,0 +1,17 @@
+var lpu = [{
+    "full_name": "KDC",
+    "address": "1234,1234,1234",
+    "phone": "89999991421"
+}, {
+    "full_name": "RCB",
+    "address": "4321,4312,4123",
+    "phone": "89999991422"
+}, {
+    "full_name": "DU",
+    "address": "4567,4567,4567",
+    "phone": "89999991423"
+}, {
+    "full_name": "AVIK",
+    "address": "6789,6789,6789",
+    "phone": "89999991424"
+}]
